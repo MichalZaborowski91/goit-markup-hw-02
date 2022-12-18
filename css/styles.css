@@ -3,6 +3,10 @@
   --text-color: #212121;
   --uppercontacts-color: #757575;
   --address-color: #ffffff99;
+  --logo-color: #000000;
+  --buttons-color: #f5f4fa;
+  --headerbackground-color: #ffffff;
+  --akcent-color: #2f303a;
 }
 .logo {
   font-family: "Railway", sans-serif;
@@ -11,7 +15,30 @@
   cursor: pointer;
   text-decoration: none;
 }
+.logo .color {
+  color: var(--hilight-color);
+}
+.logo .color-upper {
+  color: var(--logo-color);
+}
+.logo .color-lower {
+  color: var(--headerbackground-color);
+}
 
+.interactive-elements [type="button"] {
+  background-color: var(--buttons-color);
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  font-family: "Roboto";
+}
+.interactive-elements .main-button {
+  background-color: var(--buttons-color);
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  font-family: "Roboto";
+}
 .interactive-elements [type="button"]:hover,
 .interactive-elements [type="button"]:focus {
   background-color: var(--hilight-color);
@@ -27,7 +54,10 @@
 .contacts:focus {
   color: var(--hilight-color);
 }
-.address > p,
+.address > p {
+  color: var(--headerbackground-color);
+  font-style: normal;
+}
 .address > a {
   color: var(--address-color);
   font-style: normal;
@@ -49,16 +79,16 @@
 .team span {
   color: var(--uppercontacts-color);
 }
-h1 {
+.main-header {
   font-weight: 900;
   font-size: 44px;
   color: #ffffff;
 }
-h2 {
+.second-header {
   font-size: 36px;
   font-weight: 700;
 }
-h4 {
+.fourth-header {
   font-weight: 700;
 }
 
@@ -74,4 +104,10 @@ h4 {
   font-weight: 400;
   font-size: 16px;
   color: var(--uppercontacts-color);
+}
+.header {
+  background-color: var(--headerbackground-color);
+}
+.footer {
+  background-color: var(--akcent-color);
 }
